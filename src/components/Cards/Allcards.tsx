@@ -26,7 +26,6 @@ const Allcards: FunctionComponent<AllcardsProps> = ({
     getAllCards()
       .then((res) => {
         setCards(res.data);
-        // console.log(JSON.parse(sessionStorage.getItem("userDatas")!).cards);
       })
       .catch((err) => console.log(err));
   }, [cardChanged]);

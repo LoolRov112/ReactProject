@@ -172,15 +172,3 @@ const AddNewCard: FunctionComponent<AddNewCardProps> = ({ refresh }) => {
 };
 
 export default AddNewCard;
-// let currentCard = JSON.parse(
-//   sessionStorage.getItem("userDatas") as string
-// ).cards;
-
-// let currentData = JSON.parse(
-//   sessionStorage.getItem("userDatas") as string
-// );
-// currentData.cards.push(res.data.id);
-// sessionStorage.setItem("userDatas", JSON.stringify(currentData));
-// console.log(
-//   JSON.parse(sessionStorage.getItem("userDatas") as string).cards
-// );

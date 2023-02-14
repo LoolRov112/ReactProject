@@ -36,7 +36,6 @@ const Login: FunctionComponent<LoginProps> = ({
                 isLoggedIn: true,
                 businessMan: res.data[0].businessMan,
                 userId: res.data[0].id,
-                // cards: res.data[0].cards,
               })
             );
             setIsBusiness(res.data[0].businessMan);

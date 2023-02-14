@@ -47,7 +47,6 @@ const MyCards: FunctionComponent<MyCardsProps> = ({
             ))
           ) : (
             <h4 className="text-center" style={{ color: theme.color }}>
-              {" "}
               There are no cards
             </h4>
           )}
@@ -70,18 +69,3 @@ const MyCards: FunctionComponent<MyCardsProps> = ({
 };
 
 export default MyCards;
-// async function getUserCards() {
-//   try {
-//     let cardIds: number[] = JSON.parse(
-//       sessionStorage.getItem("userDatas") as string
-//     ).cards;
-//     let cards: Card[] = [];
-//     for (let id of cardIds) {
-//       let cardRes = await getSpesificCard(id);
-//       cards.push(cardRes.data);
-//     }
-//     setMyCards(cards);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
